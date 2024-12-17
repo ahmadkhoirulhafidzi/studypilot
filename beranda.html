@@ -25,7 +25,8 @@
             justify-content: space-between;
         }
         .sidebar img {
-            width: 40px;
+            width: 175px;
+            height: 65px;
             margin-bottom: 20px;
         }
         .sidebar ul {
@@ -74,175 +75,153 @@
             flex: 1;
             padding: 20px;
         }
-        .header {
+        .main-content .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
         }
-        .header h1 {
+        .main-content .header h1 {
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 700;
         }
-        .header .user-info {
+        .main-content .header .user-info {
             display: flex;
             align-items: center;
         }
-        .header .user-info img {
+        .main-content .header .user-info img {
             width: 40px;
             border-radius: 50%;
             margin-right: 10px;
         }
-        .header .user-info span {
-            font-size: 16px;
+        .main-content .header .user-info span {
+            font-size: 18px;
+            font-weight: 500;
         }
-        .cards {
+        .main-content .cards {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
-        .card {
-            background-color: #e0e0e0;
+        .main-content .cards .card {
+            background-color: #E0E0E0;
             padding: 20px;
             border-radius: 10px;
-            width: 30%;
             text-align: center;
-            margin-right: 20px;
+            width: 30%;
         }
-        .card:last-child {
-            margin-right: 0;
-        }
-        .card h2 {
-            font-size: 36px;
-            margin: 0;
-        }
-        .card p {
-            font-size: 18px;
+        .main-content .cards .card h2 {
+            font-size: 24px;
+            font-weight: 700;
             margin: 10px 0;
         }
-        .card a {
+        .main-content .cards .card p {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+        .main-content .cards .card a {
             text-decoration: none;
             color: #333;
-            font-size: 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .status {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            width: 20%;
-        }
-        .status h3 {
             font-size: 18px;
-            margin: 0 0 10px 0;
-        }
-        .status ul {
-            list-style: none;
-            padding: 0;
-        }
-        .status ul li {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .status ul li span {
-            font-size: 16px;
-        }
-        .status ul li .badge {
-            padding: 5px 10px;
-            border-radius: 5px;
-            color: #ffffff;
-        }
-        .status ul li .badge.yellow {
-            background-color: #fbc02d;
-        }
-        .status ul li .badge.green {
-            background-color: #4caf50;
-        }
-        .status ul li .badge.blue {
-            background-color: #2196f3;
-        }
-        .status ul li .badge.red {
-            background-color: #f44336;
-        }
-        .lessons {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .lessons h2 {
-            font-size: 24px;
-            margin: 0 0 20px 0;
-        }
-        .lesson-cards {
-            display: flex;
-            justify-content: space-between;
-        }
-        .lesson-card {
-            background-color: #e0e0e0;
-            padding: 20px;
-            border-radius: 10px;
-            width: 23%;
-            text-align: center;
-            margin-right: 20px;
-        }
-        .lesson-card:last-child {
-            margin-right: 0;
-        }
-        .lesson-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-        .lesson-card h3 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .lesson-card p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        .lesson-card .students {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .lesson-card .students img {
+        .main-content .cards .card a i {
+            margin-left: 10px;
+        }
+        .main-content .status {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content .status table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .main-content .status table th, .main-content .status table td {
+            padding: 10px;
+            text-align: left;
+        }
+        .main-content .status table th {
+            background-color: #F5F5F5;
+        }
+        .main-content .status table td {
+            border-bottom: 1px solid #E0E0E0;
+        }
+        .main-content .status table .status-label {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #FFFFFF;
+        }
+        .main-content .status table .status-label.dikerjakan {
+            background-color: #FF9800;
+        }
+        .main-content .status table .status-label.selesai {
+            background-color: #4CAF50;
+        }
+        .main-content .status table .status-label.dinilai {
+            background-color: #2196F3;
+        }
+        .main-content .status table .status-label.terlambat {
+            background-color: #F44336;
+        }
+        .main-content .lessons {
+            margin-top: 20px;
+        }
+        .main-content .lessons h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .main-content .lessons .lesson {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .main-content .lessons .lesson img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .main-content .lessons .lesson .details {
+            flex: 1;
+        }
+        .main-content .lessons .lesson .details h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .main-content .lessons .lesson .details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .main-content .lessons .lesson .details .students {
+            display: flex;
+            align-items: center;
+        }
+        .main-content .lessons .lesson .details .students img {
             width: 30px;
             border-radius: 50%;
             margin-right: 5px;
         }
-        .lesson-card .students span {
-            font-size: 14px;
+        .main-content .lessons .lesson .details .students span {
+            font-size: 16px;
         }
-        .dark-mode-enabled {
-            background-color: #333;
-            color: #fff;
-        }
-        .dark-mode-enabled .sidebar {
-            background-color: #444;
-        }
-        .dark-mode-enabled .card {
-            background-color: #555;
-        }
-        .dark-mode-enabled .status {
-            background-color: #444;
-        }
-        .dark-mode-enabled .lessons {
-            background-color: #444;
-        }
-        .dark-mode-enabled .lesson-card {
-            background-color: #555;
-        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div>
-            <img alt="StudyPilot logo" height="40" src="studypilot_logo.png" width="40"/>
+            <img alt="StudyPilot logo" height="40" src="logo.png" width="40"/>
             <ul>
             <li>
                 <a  class="#" href="beranda.html">
@@ -286,111 +265,212 @@
         </div>
         <div class="main-content">
             <div class="header">
-                <h1>Welcome back, Febriana</h1>
-                <div class="user-info">
-                    <img alt="User Profile Picture" height="40" src="https://storage.googleapis.com/a1aa/image/zxfN0inkhg1zdKgcm1DysvJ0DTAMrsctSJf696dxnvhtTC7TA.jpg" width="40"/>
-                    <span>
-                        Febriana N.<br/>
-                        Pelajar
-                    </span>
-                </div>
+             <h1>
+              Welcome back, Febriana
+             </h1>
+             <div class="user-info">
+              <img alt="User Profile Picture" height="40" src="https://storage.googleapis.com/a1aa/image/W3tthonTHfxfkUgkDeeYPe5tRoXtbdcg1gaDSp0CLy9tJOZfE.jpg" width="40"/>
+              <span>
+               Febriana N.
+               <br/>
+               Pelajar
+              </span>
+             </div>
             </div>
             <div class="cards">
-                <div class="card" style="background-color: #d4e157;">
-                    <h2>5</h2>
-                    <p>Pelajaran</p>
-                    <a href="#">
-                        View details
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="card" style="background-color: #ba68c8;">
-                    <h2>3</h2>
-                    <p>Tugas</p>
-                    <a href="#">
-                        View details
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="card" style="background-color: #ff8a65;">
-                    <h2>3</h2>
-                    <p>Kuis</p>
-                    <a href="#">
-                        View details
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="status">
-                    <h3>Pelajaran</h3>
-                    <ul>
-                        <li>
-                            <span>Matematika</span>
-                            <span class="badge yellow">Dikerjakan</span>
-                        </li>
-                        <li>
-                            <span>Bhs Inggris</span>
-                            <span class="badge green">Selesai</span>
-                        </li>
-                        <li>
-                            <span>Fisika</span>
-                            <span class="badge blue">Dinilai</span>
-                        </li>
-                        <li>
-                            <span>Biologi</span>
-                            <span class="badge red">Terlambat</span>
-                        </li>
-                    </ul>
-                </div>
+             <div class="card">
+              <h2>
+               5
+              </h2>
+              <p>
+               Pelajaran
+              </p>
+              <a href="#">
+               View details
+               <i class="fas fa-arrow-right">
+               </i>
+              </a>
+             </div>
+             <div class="card">
+              <h2>
+               3
+              </h2>
+              <p>
+               Tugas
+              </p>
+              <a href="#">
+               View details
+               <i class="fas fa-arrow-right">
+               </i>
+              </a>
+             </div>
+             <div class="card">
+              <h2>
+               3
+              </h2>
+              <p>
+               Kuis
+              </p>
+              <a href="#">
+               View details
+               <i class="fas fa-arrow-right">
+               </i>
+              </a>
+             </div>
+            </div>
+            <div class="status">
+             <table>
+              <thead>
+               <tr>
+                <th>
+                 Pelajaran
+                </th>
+                <th>
+                 Status
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td>
+                 Matematika
+                </td>
+                <td>
+                 <span class="status-label dikerjakan">
+                  Dikerjakan
+                 </span>
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 Bahasa Inggris
+                </td>
+                <td>
+                 <span class="status-label selesai">
+                  Selesai
+                 </span>
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 Fisika
+                </td>
+                <td>
+                 <span class="status-label dinilai">
+                  Dinilai
+                 </span>
+                </td>
+               </tr>
+               <tr>
+                <td>
+                 Biologi
+                </td>
+                <td>
+                 <span class="status-label terlambat">
+                  Terlambat
+                 </span>
+                </td>
+               </tr>
+              </tbody>
+             </table>
             </div>
             <div class="lessons">
-                <h2>Belajar apa hari ini?</h2>
-                <div class="lesson-cards">
-                    <div class="lesson-card" style="background-color: #d4e157;">
-                        <img alt="Matematika Lesson Image" height="150" src="https://storage.googleapis.com/a1aa/image/dIySWV8yflXwEaXPdvs1ciYWjPxl3G12U5Uf4EOQUI0sTC7TA.jpg" width="200"/>
-                        <h3>Matematika</h3>
-                        <p>08.00-10.00</p>
-                        <p>10 Nov 2024</p>
-                        <div class="students">
-                            <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/RFC4cXeKPd0jPaeu4kWeAXWWnMGvNUoctoXCmKeQWiINPJsPB.jpg" width="30"/>
-                            <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/mf7wakp3Kv2TMasmETwtY8huN6XVjfoJOOgHnfNOjQoeOJsPB.jpg" width="30"/>
-                            <span>+ 5 siswa lainnya</span>
-                        </div>
-                    </div>
-                    <div class="lesson-card" style="background-color: #ba68c8;">
-                        <img alt="Bahasa Inggris Lesson Image" height="150" src="https://storage.googleapis.com/a1aa/image/g1pJ58PeYhWUZatX84GAeeBYhfm6LtetTxPjGJf591No6kweJA.jpg" width="200"/>
-                        <h3>Bahasa Inggris</h3>
-                        <p>08.00-10.00</p>
-                        <p>10 Nov 2024</p>
-                        <div class="students">
-                            <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/RFC4cXeKPd0jPaeu4kWeAXWWnMGvNUoctoXCmKeQWiINPJsPB.jpg" width="30"/>
-                            <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/mf7wakp3Kv2TMasmETwtY8huN6XVjfoJOOgHnfNOjQoeOJsPB.jpg" width="30"/>
-                            <span>+ 5 siswa lainnya</span>
-                        </div>
-                    </div>
-                    <div class="lesson-card" style="background-color: #ff8a65;">
-                        <img alt="Fisika Lesson Image" height="150" src="https://storage.googleapis.com/a1aa/image/fSherZsGb1i1epndbHRLkifvC01fXXGXqJnRyKVtDCHAekweJA.jpg" width="200"/>
-                        <h3>Fisika</h3>
-                        <p>08.00-10.00</p>
-                        <p>10 Nov 2024</p>
-                        <div class="students">
-                            <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/RFC4cXeKPd0jPaeu4kWeAXWWnMGvNUoctoXCmKeQWiINPJsPB.jpg" width="30"/>
-                            <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/mf7wakp3Kv2TMasmETwtY8huN6XVjfoJOOgHnfNOjQoeOJsPB.jpg" width="30"/>
-                            <span>+ 5 siswa lainnya</span>
-                        </div>
-                    </div>
-                    <div class="lesson-card" style="background-color: #4db6ac;">
-                        <img alt="Kimia Lesson Image" height="150" src="https://storage.googleapis.com/a1aa/image/mZGQXypXakIdAdeYvhCGk6s5efhQyTYfrcAMBeyndkxMdSYfE.jpg" width="200"/>
-                        <h3>Kimia</h3>
-                        <p>08.00-10.00</p>
-                        <p>10 Nov 2024</p>
-                        <div class="students">
-                            <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/RFC4cXeKPd0jPaeu4kWeAXWWnMGvNUoctoXCmKeQWiINPJsPB.jpg" width="30"/>
-                            <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/mf7wakp3Kv2TMasmETwtY8huN6XVjfoJOOgHnfNOjQoeOJsPB.jpg" width="30"/>
-                            <span>+ 5 siswa lainnya</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             <h2>
+              Belajar apa hari ini?
+             </h2>
+             <div class="lesson">
+              <img alt="Matematika Lesson Image" height="100" src="https://storage.googleapis.com/a1aa/image/BlQjadTu3NKpGZ8iPf9J5BWTfzLdll1C8lteFH585YDniT2nA.jpg" width="100"/>
+              <div class="details">
+               <h3>
+                Matematika
+               </h3>
+               <p>
+                <i class="fas fa-clock">
+                </i>
+                08.00-10.00
+                <i class="fas fa-calendar-alt">
+                </i>
+                10 Nov 2024
+               </p>
+               <div class="students">
+                <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/nzwa4fR3LtztGqYpmduuCS4IbeQNRyhCRoIvOfCAVtDUiT2nA.jpg" width="30"/>
+                <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/MnuvFeeh4bvLvUftj8HKbwSbgEDojbo5J9JVesdiAc8zEnsPB.jpg" width="30"/>
+                <span>
+                 + 5 siswa lainnya
+                </span>
+               </div>
+              </div>
+             </div>
+             <div class="lesson">
+              <img alt="Bahasa Inggris Lesson Image" height="100" src="https://storage.googleapis.com/a1aa/image/KieLrfcXSJr94kWvR9sCbXGyF3SgSi7bfV2fpG0FluPDFnsPB.jpg" width="100"/>
+              <div class="details">
+               <h3>
+                Bahasa Inggris
+               </h3>
+               <p>
+                <i class="fas fa-clock">
+                </i>
+                08.00-10.00
+                <i class="fas fa-calendar-alt">
+                </i>
+                10 Nov 2024
+               </p>
+               <div class="students">
+                <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/nzwa4fR3LtztGqYpmduuCS4IbeQNRyhCRoIvOfCAVtDUiT2nA.jpg" width="30"/>
+                <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/MnuvFeeh4bvLvUftj8HKbwSbgEDojbo5J9JVesdiAc8zEnsPB.jpg" width="30"/>
+                <span>
+                 + 5 siswa lainnya
+                </span>
+               </div>
+              </div>
+             </div>
+             <div class="lesson">
+              <img alt="Fisika Lesson Image" height="100" src="https://storage.googleapis.com/a1aa/image/fvcfjXfEs0ctKotX0N7HCujNtLqwbI9TGitzJkDBewBIFnsPB.jpg" width="100"/>
+              <div class="details">
+               <h3>
+                Fisika
+               </h3>
+               <p>
+                <i class="fas fa-clock">
+                </i>
+                08.00-10.00
+                <i class="fas fa-calendar-alt">
+                </i>
+                10 Nov 2024
+               </p>
+               <div class="students">
+                <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/nzwa4fR3LtztGqYpmduuCS4IbeQNRyhCRoIvOfCAVtDUiT2nA.jpg" width="30"/>
+                <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/MnuvFeeh4bvLvUftj8HKbwSbgEDojbo5J9JVesdiAc8zEnsPB.jpg" width="30"/>
+                <span>
+                 + 5 siswa lainnya
+                </span>
+               </div>
+              </div>
+             </div>
+             <div class="lesson">
+              <img alt="Kimia Lesson Image" height="100" src="https://storage.googleapis.com/a1aa/image/GPh2sveJW6R2cC9q5ZiVcKmidEzW571s76p90Z0fYzmOxJ7TA.jpg" width="100"/>
+              <div class="details">
+               <h3>
+                Kimia
+               </h3>
+               <p>
+                <i class="fas fa-clock">
+                </i>
+                08.00-10.00
+                <i class="fas fa-calendar-alt">
+                </i>
+                10 Nov 2024
+               </p>
+               <div class="students">
+                <img alt="Student 1" height="30" src="https://storage.googleapis.com/a1aa/image/nzwa4fR3LtztGqYpmduuCS4IbeQNRyhCRoIvOfCAVtDUiT2nA.jpg" width="30"/>
+                <img alt="Student 2" height="30" src="https://storage.googleapis.com/a1aa/image/MnuvFeeh4bvLvUftj8HKbwSbgEDojbo5J9JVesdiAc8zEnsPB.jpg" width="30"/>
+                <span>
+                 + 5 siswa lainnya
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
         </div>
     </div>
     <script>
